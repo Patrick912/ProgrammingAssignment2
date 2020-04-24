@@ -14,7 +14,7 @@
 ## Basically this allows to cache an arbitrary result/object for a given matrix
 makeCacheMatrix <- function(x = matrix()) {
     cache <- NULL
-    #important to remove the cache value whe the matrix changes
+    #important to remove the cached value when the matrix changes
     set <- function(y) {
         x <<- y
         result <<- NULL
